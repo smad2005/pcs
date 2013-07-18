@@ -1,4 +1,4 @@
-pcs
+п»їpcs
 ===
 
 Client for http://tknkk.tk/ (former pcs.org.ua and img.if.ua)
@@ -11,20 +11,20 @@ For configuration:
 -Open GuiConfig.exe
 
 How use:
--Right click on image and select in contex menu "Залить на pcs"
+-Right click on image and select in contex menu "Р—Р°Р»РёС‚СЊ РЅР° pcs"
 
 
 ----------------
 
-Клиент для http://tknkk.tk/ (в прошлом pcs.org.ua и img.if.ua)
+РљР»РёРµРЅС‚ РґР»СЏ http://tknkk.tk/ (РІ РїСЂРѕС€Р»РѕРј pcs.org.ua Рё img.if.ua)
 
-Для установки:
-1.Клик по PcsDownloader.exe
-2.Всё)
+Р”Р»СЏ СѓСЃС‚Р°РЅРѕРІРєРё:
+1.РљР»РёРє РїРѕ PcsDownloader.exe
+2.Р’СЃС‘)
 
-Для настройки:
--Открыть GuiConfig.exe
+Р”Р»СЏ РЅР°СЃС‚СЂРѕР№РєРё:
+-РћС‚РєСЂС‹С‚СЊ GuiConfig.exe
 
-Как использовать:
--Правый клик по изображению и выберите в контекстном меню "Залить на pcs"
+РљР°Рє РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ:
+-РџСЂР°РІС‹Р№ РєР»РёРє РїРѕ РёР·РѕР±СЂР°Р¶РµРЅРёСЋ Рё РІС‹Р±РµСЂРёС‚Рµ РІ РєРѕРЅС‚РµРєСЃС‚РЅРѕРј РјРµРЅСЋ "Р—Р°Р»РёС‚СЊ РЅР° pcs"
 
