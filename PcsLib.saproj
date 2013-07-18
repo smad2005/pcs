@@ -1,0 +1,30 @@
+<SmartAssemblyProject ProjectId="{c0e9021e-ac0e-45c5-8ce4-4eaa41c2da7a}" Version="2.0">
+    <MainAssemblyFileName>.\PcsDownloader\bin\Release\Pcs.dll</MainAssemblyFileName>
+    <Configuration Name="Release">
+        <ApplicationName />
+        <Destination DestinationFileName=".\PcsDownloader\bin\Release\Pcs2.dll" />
+        <Assemblies>
+            <Assembly AssemblyName="Pcs, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <ResourcesCompression />
+                    <MemberRefsProxy />
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="2" />
+                </Merging>
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting Template="res:{SmartExceptions}.1033.dll" />
+            <FeatureUsageReporting Template="res:SmartUsageWithUIConsentFirstRun1033.dll" />
+            <StrongNameSigning />
+            <OtherProtections AddMetadataStream="1" SuppressIldasm="1" />
+            <StringsEncoding />
+            <OtherOptimizations />
+            <Debugging />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>
