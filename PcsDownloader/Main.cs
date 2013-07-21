@@ -21,9 +21,7 @@ namespace PcsDownloader
         private void Main_Load(object sender, EventArgs e)
         {
             string[] arg = Environment.GetCommandLineArgs();
-            var reg = new Register(Application.ExecutablePath);
 
-            reg.AddToContextMenu();
             if (arg.Length == 3 && arg[1] == "-a")
             {
                 string curdir = Path.GetDirectoryName(Application.ExecutablePath);
@@ -70,7 +68,21 @@ namespace PcsDownloader
                 t.Start();
             }
             else
+            {
+                try
+                {
+                    var reg = new Register(Application.ExecutablePath);
+                    reg.AddToContextMenu();
+                    MessageBox.Show("Контексное меню обновлено", "Установлено", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Требуются права администратора","Для добавления в контексное меню",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+            
                 Close();
+            }
+
         }
 
         /// <summary>
@@ -86,7 +98,6 @@ namespace PcsDownloader
                 var pr = new Process();
                 pr.StartInfo.FileName = gui;
                 pr.StartInfo.ErrorDialog = false;
-
                 pr.StartInfo.WorkingDirectory = Path.GetDirectoryName(opturl);
                 pr.Start();
                 if (File.Exists(gui))

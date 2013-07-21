@@ -18,6 +18,7 @@ namespace Pcs
     public class Pcs
     {
 
+        public static readonly string Domen = "http://tknkk.tk";
         /// <summary>
         /// Формат во что сохраняем
         /// </summary>
@@ -32,7 +33,7 @@ namespace Pcs
         /// <summary>
         /// Адрес скрипта
         /// </summary>
-        private Uri FullUrl { get; set; }
+        public Uri FullUrl { get; set; }
 
 
         /// <summary>
@@ -69,8 +70,7 @@ namespace Pcs
 
         private Pcs()
         {
-
-            FullUrl = new Uri("http://tknkk.tk//upload.php");
+          FullUrl = new Uri(string.Format("{0}//upload.php", Domen));
         }
 
         /// <summary>
@@ -208,6 +208,7 @@ namespace Pcs
                     ext = "jpeg";
                     goto case "jpeg";
                 case "gif":
+                case "bmp":
                 case "png":
                 case "jpeg":
                     {

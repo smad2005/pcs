@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.ch_public = new System.Windows.Forms.CheckBox();
+            this.llEnterInAcoount = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -54,10 +55,11 @@
             this.t_cookie.Name = "t_cookie";
             this.t_cookie.Size = new System.Drawing.Size(201, 20);
             this.t_cookie.TabIndex = 1;
+            this.t_cookie.TextChanged += new System.EventHandler(this.t_cookie_TextChanged);
             // 
             // b_ok
             // 
-            this.b_ok.Location = new System.Drawing.Point(66, 161);
+            this.b_ok.Location = new System.Drawing.Point(66, 181);
             this.b_ok.Name = "b_ok";
             this.b_ok.Size = new System.Drawing.Size(75, 23);
             this.b_ok.TabIndex = 2;
@@ -68,7 +70,7 @@
             // b_cancel
             // 
             this.b_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.b_cancel.Location = new System.Drawing.Point(147, 161);
+            this.b_cancel.Location = new System.Drawing.Point(147, 181);
             this.b_cancel.Name = "b_cancel";
             this.b_cancel.Size = new System.Drawing.Size(75, 23);
             this.b_cancel.TabIndex = 3;
@@ -97,7 +99,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(57, 137);
+            this.linkLabel1.Location = new System.Drawing.Point(18, 131);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(163, 13);
             this.linkLabel1.TabIndex = 6;
@@ -115,13 +117,25 @@
             this.ch_public.Text = "Публиковать для всех посетителей";
             this.ch_public.UseVisualStyleBackColor = true;
             // 
+            // llEnterInAcoount
+            // 
+            this.llEnterInAcoount.AutoSize = true;
+            this.llEnterInAcoount.Location = new System.Drawing.Point(18, 154);
+            this.llEnterInAcoount.Name = "llEnterInAcoount";
+            this.llEnterInAcoount.Size = new System.Drawing.Size(89, 13);
+            this.llEnterInAcoount.TabIndex = 8;
+            this.llEnterInAcoount.TabStop = true;
+            this.llEnterInAcoount.Text = "Войти в аккаунт";
+            this.llEnterInAcoount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llEnterInAcount_LinkClicked);
+            // 
             // Main
             // 
             this.AcceptButton = this.b_ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.b_cancel;
-            this.ClientSize = new System.Drawing.Size(248, 197);
+            this.ClientSize = new System.Drawing.Size(236, 213);
+            this.Controls.Add(this.llEnterInAcoount);
             this.Controls.Add(this.ch_public);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label2);
@@ -152,6 +166,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.CheckBox ch_public;
+        private System.Windows.Forms.LinkLabel llEnterInAcoount;
     }
 }
 
