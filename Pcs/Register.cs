@@ -32,7 +32,7 @@ namespace Pcs
            if (shell != null)
            {
                var topcs=shell.CreateSubKey(REGNAME);
-               topcs.SetValue("","Залить на Pcs");
+               topcs.SetValue("", "Залить на img.a2me");
                topcs.SetValue("Icon",string.Format("\"{0}\"",path));
                topcs.CreateSubKey("Command").SetValue("", string.Format("\"{0}\" -a \"%1\"", path));
            }

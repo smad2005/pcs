@@ -18,7 +18,7 @@ namespace Pcs
     public class Pcs
     {
 
-        public static readonly string Domen = "http://tknkk.tk";
+        public static readonly string Domen = "http://img.a2me.ru";
         /// <summary>
         /// Формат во что сохраняем
         /// </summary>
