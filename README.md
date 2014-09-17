@@ -1,7 +1,7 @@
 ﻿pcs
 ===
 
-Client for http://tknkk.tk/ (former pcs.org.ua and img.if.ua)
+Client for http://img.a2me.ru (former http://tknkk.tk and pcs.org.ua and img.if.ua)
 
 For install:
 
@@ -20,7 +20,7 @@ How use:
 
 ----------------
 
-Клиент для http://tknkk.tk/ (в прошлом pcs.org.ua и img.if.ua)
+Клиент для http://img.a2me.ru (бывший http://tknkk.tk and pcs.org.ua and img.if.ua)
 
 Для установки:
 
